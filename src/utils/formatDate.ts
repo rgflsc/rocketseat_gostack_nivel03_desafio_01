@@ -1,7 +1,7 @@
-import { format, parseISO } from 'date-fns';
+import moment from 'moment';
 
 const formatDate = (value: Date): string => {
-  return format(parseISO(String(value)), 'dd/MM/yyyy');
+  return moment(value).format('DD/MM/YYYY');
 };
 
 export default formatDate;
